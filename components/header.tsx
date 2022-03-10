@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const Header: React.FC = () => (
   <header className="bg-white sm:h-20 py-5 border-b sm:sticky top-0">
@@ -18,6 +18,9 @@ const Header: React.FC = () => (
             <Link href="/about-us">
               <a className="text-gray-500 hover:text-pink-700">About us</a>
             </Link>
+            <Link href="/test">
+              <a className="text-gray-500 hover:text-pink-700">Test</a>
+            </Link>
           </div>
         </div>
         <Link href="/admin" prefetch={false}>
@@ -28,6 +31,6 @@ const Header: React.FC = () => (
       </div>
     </div>
   </header>
-)
+);
 
-export default Header
+export default Header;
